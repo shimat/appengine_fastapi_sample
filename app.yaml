@@ -1,0 +1,4 @@
+runtime: python38
+service: fastapi-sample
+entrypoint: gunicorn --workers 4 --worker-class uvicorn.workers.UvicornWorker main:app
+instance_class: F1
